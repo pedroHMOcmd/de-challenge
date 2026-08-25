@@ -226,8 +226,8 @@ CREATE TABLE reporting.FactSales
     LoadRunId         uniqueidentifier NOT NULL,
     LoadedAtUtc       datetime2(3)    NOT NULL
         CONSTRAINT DF_FactSales_LoadedAt DEFAULT SYSUTCDATETIME(),
-    CONSTRAINT PK_FactSales PRIMARY KEY (SalesFactId),
-    CONSTRAINT UQ_FactSales_OrderLine UNIQUE (OrderId, OrderItemId),
+    CONSTRAINT PK_FactSales PRIMARY KEY NONCLUSTERED (SalesFactId),
+    CONSTRAINT UQ_FactSales_OrderLine UNIQUE NONCLUSTERED (OrderId, OrderItemId),
     CONSTRAINT FK_FactSales_Date FOREIGN KEY (OrderDateKey)
         REFERENCES reporting.DimDate (DateKey),
     CONSTRAINT FK_FactSales_Time FOREIGN KEY (OrderTimeKey)
@@ -242,6 +242,10 @@ CREATE TABLE reporting.FactSales
     CONSTRAINT CK_FactSales_Prices CHECK
         (UnitPriceOriginal > 0 AND FxRateToUsd > 0 AND UnitPriceUsd > 0 AND TotalAmountUsd > 0)
 );
+GO
+
+CREATE CLUSTERED COLUMNSTORE INDEX CCI_FactSales
+    ON reporting.FactSales;
 GO
 
 CREATE INDEX IX_FactSales_DateProduct
