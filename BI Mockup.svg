@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <linearGradient id="demandScale" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#edf5f8"/><stop offset="35%" stop-color="#8fc5dc"/>
+      <stop offset="70%" stop-color="#2f7fb7"/><stop offset="100%" stop-color="#08306b"/>
+    </linearGradient>
+    <style>
+      .bg { fill:#f5f6f8 } .panel { fill:#fff; stroke:#e4e7eb; stroke-width:1 }
+      .ink { fill:#18212f; font-family:Arial,sans-serif } .muted { fill:#697386; font-family:Arial,sans-serif }
+      .small { font-size:14px } .label { font-size:16px; font-weight:600 } .title { font-size:28px; font-weight:700 }
+      .metric { font-size:30px; font-weight:700 } .teal { fill:#17a89a } .navy { fill:#284b63 }
+      .v0 { fill:#f4f6f7 } .v1 { fill:#e5f0f5 } .v5 { fill:#b5d8e7 } .v7 { fill:#80bad5 }
+      .v9 { fill:#4a97c5 } .v11 { fill:#2778b3 } .v12 { fill:#145a96 } .v13 { fill:#08306b }
+      .cellDark { fill:#fff; font:600 13px Arial,sans-serif; text-anchor:middle }
+      .cellLight { fill:#183249; font:600 13px Arial,sans-serif; text-anchor:middle }
+    </style>
+  </defs>
+  <rect class="bg" width="1440" height="900"/>
+  <rect x="0" y="0" width="1440" height="76" fill="#18212f"/>
+  <text x="48" y="47" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700">Commerce pulse</text>
+  <text x="1170" y="45" fill="#bfc7d3" font-family="Arial,sans-serif" font-size="14">Wireframe · USD · UTC</text>
+
+  <g>
+    <rect class="panel" x="40" y="100" rx="8" width="250" height="56"/>
+    <text class="muted small" x="58" y="123">Date</text><text class="ink label" x="58" y="145">Jan–Dec 2024</text>
+    <rect class="panel" x="306" y="100" rx="8" width="250" height="56"/>
+    <text class="muted small" x="324" y="123">Category</text><text class="ink label" x="324" y="145">All categories</text>
+    <rect class="panel" x="572" y="100" rx="8" width="250" height="56"/>
+    <text class="muted small" x="590" y="123">Weekday</text><text class="ink label" x="590" y="145">All days</text>
+  </g>
+
+  <g>
+    <rect class="panel" x="40" y="178" rx="8" width="250" height="104"/>
+    <text class="muted small" x="60" y="208">Revenue</text><text class="ink label" x="60" y="244">Daily FX required</text>
+    <rect class="panel" x="306" y="178" rx="8" width="250" height="104"/>
+    <text class="muted small" x="326" y="208">Units · valid currency</text><text class="ink metric" x="326" y="250">793</text>
+    <rect class="panel" x="572" y="178" rx="8" width="250" height="104"/>
+    <text class="muted small" x="592" y="208">Orders · valid currency</text><text class="ink metric" x="592" y="250">285</text>
+    <rect x="838" y="178" rx="8" width="562" height="104" fill="#e4f6f3"/>
+    <text x="860" y="208" fill="#18746c" font-family="Arial,sans-serif" font-size="14">STRONGEST HISTORICAL WINDOW</text>
+    <text class="ink metric" x="860" y="249">Peak · 13 orders</text>
+    <text class="muted small" x="1145" y="249">3 two-hour windows tied</text>
+  </g>
+
+  <rect class="panel" x="40" y="306" rx="8" width="680" height="534"/>
+  <text class="ink title" x="68" y="350">Top products by units</text>
+  <text class="muted small" x="68" y="376">Lines with USD, EUR, or GBP currency</text>
+  <text class="muted small" x="68" y="420">Dog Training Treats</text><rect class="teal" x="230" y="402" width="395" height="22" rx="3"/><text class="ink small" x="636" y="419">32</text>
+  <text class="muted small" x="68" y="472">Emergency Car Kit</text><rect class="teal" x="230" y="454" width="346" height="22" rx="3"/><text class="ink small" x="587" y="471">28</text>
+  <text class="muted small" x="68" y="524">Cat Litter Mat</text><rect class="teal" x="230" y="506" width="333" height="22" rx="3"/><text class="ink small" x="574" y="523">27</text>
+  <text class="muted small" x="68" y="576">Dog Leash Retractable</text><rect class="teal" x="230" y="558" width="333" height="22" rx="3"/><text class="ink small" x="574" y="575">27</text>
+  <text class="muted small" x="68" y="628">Pet Carrier Soft</text><rect class="teal" x="230" y="610" width="321" height="22" rx="3"/><text class="ink small" x="562" y="627">26</text>
+  <line x1="230" y1="675" x2="650" y2="675" stroke="#d8dde5"/>
+  <text class="muted small" x="230" y="700">0</text><text class="muted small" x="620" y="700">32 units</text>
+  <text class="muted small" x="68" y="773">Raw source: 988 units / 360 orders · 75 invalid-currency lines excluded</text>
+
+  <rect class="panel" x="744" y="306" rx="8" width="656" height="534"/>
+  <text class="ink title" x="772" y="350">Demand by hour</text>
+  <text class="muted small" x="772" y="376">Order activity by weekday · darker means busier</text>
+  <text class="muted small" x="1137" y="329">Order count</text>
+  <text class="muted small" x="1125" y="352">0</text><rect x="1144" y="338" width="130" height="13" rx="6" fill="url(#demandScale)"/><text class="muted small" x="1282" y="352">13</text>
+  <g class="muted small">
+    <text x="772" y="440">Mon</text><text x="772" y="492">Tue</text><text x="772" y="544">Wed</text>
+    <text x="772" y="596">Thu</text><text x="772" y="648">Fri</text><text x="772" y="700">Sat</text><text x="772" y="752">Sun</text>
+    <text x="840" y="790">09–10</text><text x="930" y="790">11–12</text><text x="1020" y="790">13–14</text><text x="1110" y="790">15–16</text><text x="1200" y="790">17–18</text>
+    <text x="988" y="820">Two-hour window (UTC)</text>
+  </g>
+  <g>
+    <rect class="v5" x="832" y="416" width="82" height="32"/><rect class="v11" x="922" y="416" width="82" height="32"/><rect class="v9" x="1012" y="416" width="82" height="32"/><rect class="v11" x="1102" y="416" width="82" height="32"/><rect class="v0" x="1192" y="416" width="82" height="32"/>
+    <rect class="v7" x="832" y="468" width="82" height="32"/><rect class="v12" x="922" y="468" width="82" height="32"/><rect class="v11" x="1012" y="468" width="82" height="32"/><rect class="v9" x="1102" y="468" width="82" height="32"/><rect class="v1" x="1192" y="468" width="82" height="32"/>
+    <rect class="v5" x="832" y="520" width="82" height="32"/><rect class="v7" x="922" y="520" width="82" height="32"/><rect class="v7" x="1012" y="520" width="82" height="32"/><rect class="v13" x="1102" y="520" width="82" height="32"/><rect class="v0" x="1192" y="520" width="82" height="32"/>
+    <rect class="v7" x="832" y="572" width="82" height="32"/><rect class="v12" x="922" y="572" width="82" height="32"/><rect class="v9" x="1012" y="572" width="82" height="32"/><rect class="v11" x="1102" y="572" width="82" height="32"/><rect class="v1" x="1192" y="572" width="82" height="32"/>
+    <rect class="v11" x="832" y="624" width="82" height="32"/><rect class="v9" x="922" y="624" width="82" height="32"/><rect class="v11" x="1012" y="624" width="82" height="32"/><rect class="v9" x="1102" y="624" width="82" height="32"/><rect class="v1" x="1192" y="624" width="82" height="32"/>
+    <rect class="v7" x="832" y="676" width="82" height="32"/><rect class="v11" x="922" y="676" width="82" height="32"/><rect class="v12" x="1012" y="676" width="82" height="32"/><rect class="v9" x="1102" y="676" width="82" height="32"/><rect class="v1" x="1192" y="676" width="82" height="32"/>
+    <rect class="v9" x="832" y="728" width="82" height="32"/><rect class="v7" x="922" y="728" width="82" height="32"/><rect class="v13" x="1012" y="728" width="82" height="32"/><rect class="v13" x="1102" y="728" width="82" height="32"/><rect class="v0" x="1192" y="728" width="82" height="32"/>
+  </g>
+  <g>
+    <text class="cellLight" x="873" y="437">6</text><text class="cellDark" x="963" y="437">11</text><text class="cellLight" x="1053" y="437">10</text><text class="cellDark" x="1143" y="437">11</text><text class="cellLight" x="1233" y="437">0</text>
+    <text class="cellLight" x="873" y="489">8</text><text class="cellDark" x="963" y="489">12</text><text class="cellDark" x="1053" y="489">11</text><text class="cellLight" x="1143" y="489">9</text><text class="cellLight" x="1233" y="489">1</text>
+    <text class="cellLight" x="873" y="541">5</text><text class="cellLight" x="963" y="541">8</text><text class="cellLight" x="1053" y="541">8</text><text class="cellDark" x="1143" y="541">13</text><text class="cellLight" x="1233" y="541">0</text>
+    <text class="cellLight" x="873" y="593">8</text><text class="cellDark" x="963" y="593">12</text><text class="cellLight" x="1053" y="593">10</text><text class="cellDark" x="1143" y="593">11</text><text class="cellLight" x="1233" y="593">2</text>
+    <text class="cellDark" x="873" y="645">11</text><text class="cellLight" x="963" y="645">10</text><text class="cellDark" x="1053" y="645">11</text><text class="cellLight" x="1143" y="645">10</text><text class="cellLight" x="1233" y="645">2</text>
+    <text class="cellLight" x="873" y="697">8</text><text class="cellDark" x="963" y="697">11</text><text class="cellDark" x="1053" y="697">12</text><text class="cellLight" x="1143" y="697">9</text><text class="cellLight" x="1233" y="697">2</text>
+    <text class="cellLight" x="873" y="749">10</text><text class="cellLight" x="963" y="749">7</text><text class="cellDark" x="1053" y="749">13</text><text class="cellDark" x="1143" y="749">13</text><text class="cellLight" x="1233" y="749">0</text>
+  </g>
+</svg>
